@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+.container {
+  margin: 10rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(209, 209, 209);
+}
+.todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 45rem;
+}
+.alert {
+  font-size: 1.5rem;
+  width: 95%;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  height: 3rem;
+  display: grid;
+  align-items: center;
+}
+
+.green {
+  color: green;
+  background-color: rgb(147, 238, 147);
+}
+
+.red {
+  color: red;
+  background-color: rgb(247, 183, 183);
+}
+
+.todo-form h2 {
+  font-size: 2.5rem;
+  margin: 2rem auto;
+  letter-spacing: 0.2rem;
+  color: rgb(51, 51, 51);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(182, 182, 182);
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#input {
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+  border-color: transparent;
+  background-color: rgb(240, 240, 240);
+  flex: 1 0 auto;
+  letter-spacing: 0.1rem;
+  outline-color: rgb(135, 186, 253);
+  color: rgb(61, 61, 61);
+  font-weight: 700;
+}
+.submit-btn {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-color: transparent;
+  border-radius: 0 0.3rem 0.3rem 0;
+  background-color: rgb(126, 193, 219);
+  color: rgb(11, 25, 51);
+  /* flex: 0 0 5rem; */
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  width: 8rem;
+}
+.list {
+  width: 90%;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0;
+}
+.item-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: rgb(49, 49, 49);
+}
+.edit-btn,
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  margin-left: 1rem;
+}
+.fa-edit {
+  color: rgb(39, 114, 51);
+}
+.fa-trash-alt {
+  color: rgb(235, 20, 20);
+}
+.clear-btn {
+  margin: 3rem auto 0 auto;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: red;
+  cursor: pointer;
+  display: none;
+}
